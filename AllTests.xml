@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="RedBus">
+<suite name="RedBus" parallel="tests">
     <test name="ticket-booking">
         <parameter name="browser" value="chrome"></parameter>
         <packages>
             <package name="com.metlife.testsuite"></package>
         </packages>
     </test>
+
     <test name="ticket-booking2">
         <parameter name="browser" value="edge"></parameter>
         <packages>
