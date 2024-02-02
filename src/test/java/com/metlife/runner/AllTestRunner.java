@@ -5,8 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/java/com/metlife/features"},glue="com.metlife.stepdefinition",
-        plugin = {"html:TestOutput.html "})
+@CucumberOptions(dryRun=true,
+        features = {"src/test/java/com/metlife/features"},
+        glue="com.metlife.stepdefinition",
+        plugin = {"html:TestOutput.html "},
+        tags = "@smoke or @sanity or @all or @booking")
 public class AllTestRunner {
 
 }

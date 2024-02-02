@@ -14,8 +14,8 @@ import java.time.Duration;
 public class WebDriverUtils {
     static WebDriver driver;
     static WebDriverWait wait;
-    public static void initialize(){
-        switch(PropertyUtils.getProperty("browser")) {
+    public static void initialize(String browser){
+        switch(browser) {
             case "firefox":
                 driver = new FirefoxDriver();
                 break;

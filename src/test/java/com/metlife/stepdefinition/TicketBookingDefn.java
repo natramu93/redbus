@@ -10,7 +10,7 @@ public class TicketBookingDefn {
     @Given("I log into redbus.in as a user")
     public void i_log_into_redbus_in_as_a_user() {
         // Write code here that turns the phrase above into concrete actions
-        WebDriverUtils.initialize();
+        WebDriverUtils.initialize("chrome");
         WebDriverUtils.navigate("http://redbus.in");
     }
     @When("I update the source as {string}")
